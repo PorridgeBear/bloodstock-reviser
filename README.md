@@ -25,18 +25,18 @@ The Spotify genres/previews is run as follows and assumes `bands.json` as input:
 
     python spotify.py
 
-This will output `bands_final.json`
+This will output `bands_final.json`. A client ID and secret is required at Spotify to run this, using the Client Credentials auth flow.
 
 ## Web page
 
-The HTMNL file is created as follows and assumes `bands_final.json` as input:
+The HTML file is created as follows and assumes `bands_final.json` as input:
 
     python html.py
 
-This will output `boa-revision.html` which can be opened in a local web browser.
+This will output `boa-revision.html` which can be opened in a local web browser. Strap in for a truly 1999 UI experience, this was not the point at this stage.
 
 # Improvements
 
 * Structure the data into stages and order by date
-* Enhance the UI (React?) to provide a better experience e.g. filtering, type-down search, inline audio preview and a nicer look
+* Enhance the UI (React + Bootstrap or Material or Tailwind) to provide a better experience e.g. filtering, type-down search, inline audio preview and a nicer look
 * Create a script that runs the entire pipeline end to end for a given year, possibly deploying out to public web for others to use
